@@ -95,7 +95,7 @@ async def read_root(request: Request):
 
 
 @app.websocket("/ws/interview")
-async def websocket_endpoint(websocket: WebSocket, pos: str = Query("AI Engineer")):
+async def websocket_endpoint(websocket: WebSocket, pos: str = Query("Cherin's Interview Questions Related to Migration & climate change")):
     await websocket.accept()
     try:
         team = await create_interview_team(websocket, pos)
